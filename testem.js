@@ -3,17 +3,17 @@ module.exports = {
   test_page: 'tests/index.html?hidepassed',
   disable_watching: true,
   launch_in_ci: [
-    'Chrome'
+    'PhantomJS'
   ],
   launch_in_dev: [
-    'Chrome'
+    'Chromium'
   ],
-  browser_args: {
-    Chrome: [
-      '--disable-gpu',
-      '--headless',
-      '--remote-debugging-port=9222',
-      '--window-size=1440,900'
-    ]
-  }
+  // browser_args: {
+  //   Chromium: [
+  //     '--disable-gpu',
+  //     '--headless',
+  //     '--remote-debugging-port=9222',
+  //     '--window-size=1440,900'
+  //   ]
+  // }
 };
